@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color</title>
+</head>
+<body style="padding: 50px;">
+    <h2 id="over">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima laborum recusandae quasi molestiae eius quidem asperiores, mollitia obcaecati. 
+        Cupiditate ipsam consequatur modi temporibus ullam possimus maxime voluptate culpa, incidunt quibusdam.</h2>
+    <button type="submit" class="btn btn-info" onclick="changeColor()">Click Me</button>
+    <script>
+        let mouse=document.getElementById('over');
+        function changeColor(){
+            let colour=["red","yellow","blue","green","pink","orange","brown"];
+            let com = Math.floor(Math.random() * 7) + 1;
+            mouse.style.color = colour[com];
+        };
+    </script>
+</body>
+</html>
